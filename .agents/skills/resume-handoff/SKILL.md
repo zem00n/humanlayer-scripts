@@ -1,5 +1,5 @@
 ---
-name: resume_handoff
+name: resume-handoff
 description: >
   Resume work from a handoff document with context analysis and validation of previous work state.
   Use when resuming a session from a handoff file path or a ticket number like ENG-XXXX.

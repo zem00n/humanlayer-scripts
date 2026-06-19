@@ -1,5 +1,5 @@
 ---
-name: create_handoff
+name: create-handoff
 description: >
   Create a handoff document to transfer work context to another session or agent.
   Use when ending a session mid-task, switching contexts, or handing off to another engineer.

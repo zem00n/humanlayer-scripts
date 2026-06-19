@@ -1,5 +1,5 @@
 ---
-name: create_plan
+name: create-plan
 description: >
   Create detailed implementation plans through interactive research and iteration.
   Use when user asks to plan a feature, create a plan, or design an implementation approach.

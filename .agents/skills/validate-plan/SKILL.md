@@ -1,5 +1,5 @@
 ---
-name: validate_plan
+name: validate-plan
 description: >
   Validate that an implementation plan was correctly executed, verifying all success criteria and identifying deviations or issues.
   Use after implementing a plan to confirm correctness before merging or closing a ticket.

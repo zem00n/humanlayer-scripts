@@ -1,5 +1,5 @@
 ---
-name: ci_commit
+name: ci-commit
 description: >
   Create git commits for session changes with clear, atomic messages — no user approval step.
   Use when committing in CI/automated contexts or when the user says to commit without confirmation.

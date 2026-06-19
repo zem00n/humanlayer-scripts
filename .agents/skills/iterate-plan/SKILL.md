@@ -1,5 +1,5 @@
 ---
-name: iterate_plan
+name: iterate-plan
 description: >
   Update an existing implementation plan based on user feedback with thorough research.
   Use when refining, adjusting scope, or adding phases to an existing plan file.

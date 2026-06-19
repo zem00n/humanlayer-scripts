@@ -1,5 +1,5 @@
 ---
-name: implement_plan
+name: implement-plan
 description: >
   Implement an approved technical plan from thoughts/shared/plans/ with phase-by-phase verification.
   Use when given a plan file path and asked to implement it.

@@ -1,5 +1,5 @@
 ---
-name: research_codebase
+name: research-codebase
 description: >
   Document codebase as-is using parallel sub-agents and synthesize findings into a research document.
   Use when asked to understand how something works, map a system, or research a feature area.
