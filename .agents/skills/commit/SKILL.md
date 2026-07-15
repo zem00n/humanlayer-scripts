@@ -9,6 +9,40 @@ description: >
 
 You are tasked with creating git commits for the changes made during this session.
 
+## Commit Message Style: GitHub Copilot
+
+Write commit messages in the style GitHub Copilot uses when generating commit suggestions:
+
+- **Subject line**: short (50–72 chars), natural language, imperative mood, **no** conventional-commit type prefix (`feat:`, `fix:`, etc.)
+- **Body** (optional): 1–3 sentences or a brief bullet list explaining *what* changed and *why*, wrapped at 72 chars
+- Tone: clear, direct, like a competent engineer summarising their own work
+
+**Good examples:**
+```
+Add XCom viewer screen to task instances
+```
+```
+Add clipboard support for copying XCom keys and values
+
+Users can now press Tab to toggle between key and value selection,
+then c to copy the selected text to the system clipboard.
+```
+```
+Swap hand-rolled JSON highlighter for Chroma
+
+- Removes ~200 lines of regex-based colorizer
+- Adds chroma/v2 with monokai theme and terminal16m formatter
+- Automatically detects JSON, XML, and HTML content
+```
+
+**Bad examples (avoid):**
+```
+feat: add xcom viewer         ← no conventional-commit prefix
+fix(EMS-123): ...             ← no Jira refs unless codebase requires them
+Added the XCom viewer screen  ← past tense
+Misc changes                  ← vague
+```
+
 ## Process:
 
 1. **Think about what changed:**
@@ -19,16 +53,10 @@ You are tasked with creating git commits for the changes made during this sessio
 
 2. **Plan your commit(s):**
    - Identify which files belong together
-   - Draft clear, descriptive commit messages
-   - Use imperative mood in commit messages
-   - Focus on why the changes were made, not just what
+   - Draft clear, descriptive commit messages in Copilot style
+   - Focus on what changed and why, not implementation minutiae
 
-3. **Present your plan to the user:**
-   - List the files you plan to add for each commit
-   - Show the commit message(s) you'll use
-   - Ask: "I plan to create [N] commit(s) with these changes. Shall I proceed?"
-
-4. **Execute upon confirmation:**
+3. **Execute immediately — no approval step:**
    - Use `git add` with specific files (never use `-A` or `.`)
    - Create commits with your planned messages
    - Show the result with `git log --oneline -n [number]`
@@ -44,4 +72,4 @@ You are tasked with creating git commits for the changes made during this sessio
 - You have the full context of what was done in this session
 - Group related changes together
 - Keep commits focused and atomic when possible
-- The user trusts your judgment - they asked you to commit
+- The user trusts your judgment — they asked you to commit
